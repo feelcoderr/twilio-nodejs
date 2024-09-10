@@ -54,9 +54,7 @@ app.post("/handle-input", (req, res) => {
       });
 
     // Thank the user and end the call
-    twiml.say(
-      "Thank you! The interview link has been sent to your phone. Goodbye!"
-    );
+    twiml.say("Thank you! The interview link has been sent to your phone.");
     twiml.hangup();
   } else {
     // Repeat the prompt if an incorrect option is pressed
